@@ -1,0 +1,506 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  padding-bottom: 250px;
+  min-height: 100vh;
+}
+
+/* Estilos Header */
+
+header{
+  background-color: rgba(51, 51, 51, 0.5);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  z-index: 50;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  
+}
+
+ header img{
+  display: flex;
+  width: 8em;
+  height: 6em;
+}
+
+.nav__ul{
+  text-decoration: none;
+  margin-right: 2em;
+}
+
+.nav__ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 1em;
+
+} 
+
+.nav__ul__li a{
+  font-family:'lato', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* ESTILOS PARA SECCION INDEX */
+/* MAIN GRID */
+.main-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh 1fr;
+  grid-template-areas: "inscripciones"
+                        "videoInformativo";
+}
+
+/* Estilos Section 1 */
+.inscripciones{
+  grid-area: inscripciones;
+  background-image: url(../assets/banner1.jpg);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.inscripciones__contenedor__titulo{
+  font-family: 'lato', sans-serif;
+  color: #fff;
+  font-weight: 100;
+  font-size: 25px;
+  padding: 10px;
+  border: 1px solid #fff;
+  margin-bottom: 15px;
+} 
+ 
+.inscripciones__contenedor__parrafo{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 40px;
+}
+
+.inscripciones__contenedor__btn{
+  display: inline-block;
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  border: outset 3px white;
+  text-decoration: none;
+}
+
+/* Estilos Section 2 */
+
+.videoInformativo{
+  grid-area: videoInformativo;
+  text-align: center;
+}
+
+ .videoInformativo__titulo{
+  padding: 10px;
+}
+.videoInformativo__video{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: solid 3px #333;
+} 
+/* FIN ESTILOS INDEX */
+
+/* Estilos Footer */
+
+footer{
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__ul{
+  padding-top: 25px;
+  margin-left: 150px;
+}
+
+.footer__titulo{
+  text-align: end;
+  margin-right: 10px;
+}
+
+ /* ESTILOS PARA SECCION DE CURSOS */
+
+/* Estilo para banner del head */
+
+.bannerCursos{
+  background-image: url(../assets/bannerCursos.jpg);
+  background-position: 0% 40%;
+  width: 100%;
+  height: 15vh;
+}
+
+/* Estilos para el MAIN cursos */
+
+.cursos-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "kids";
+}
+
+.kids-grid{
+  grid-area: kids;
+}
+
+/* Estilos para section KIDS */
+
+.kids{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20vh 1fr;
+  grid-template-areas: "kids__titulo kids__titulo"
+                        "kids__img kids__p";
+}
+
+ .kids__titulo{
+  grid-area: kids__titulo;
+  text-align: center;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  border-bottom: 1px solid #000;
+}
+
+.kids__img{
+  grid-area: kids__img;
+  display: inline-block;
+  margin: auto;
+}
+
+.kids__img img{
+  width: 25em;
+  height: 15em;
+}
+
+.kids__p{
+  grid-area: kids__p;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: justify;
+  border-bottom: solid 1px #000;
+  padding-bottom: 15px;
+  margin: auto;
+} 
+/* FIN SECCION CURSOS */
+
+/* Estilos para seccion NOTICIAS */
+/* Estilos para banner */
+
+.bannerNoticias{
+  background-image: url(../assets/bannerNoticias.jpg);
+  width: 100%;
+  height: 15vh;
+  background-position: 0 60%;
+}
+
+/* Estilos para el Main noticias */
+
+.noticias-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "yfu";
+}
+
+.yfu-grid{
+  grid-area: yfu;
+}
+
+/* Estilos para section YFU */
+
+.yfu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20vh 1fr;
+  grid-template-areas: "yfu__titulo yfu__titulo"
+                        "yfu__img yfu__informacion";
+}
+
+.yfu__titulo{
+  grid-area: yfu__titulo;
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  margin: auto;
+  border-bottom: 1px solid #000;
+}
+
+.yfu__img{
+  grid-area: yfu__img;
+  margin: auto;
+}
+
+.yfu__img img{
+  width: 25em;
+  height: 15em;
+}
+
+.yfu__informacion{
+  grid-area: yfu__informacion;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #000;
+  margin: auto;
+}
+
+.yfu__informacion h2{
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+
+.yfu__informacion p{
+  color: #333;
+  font-size: 18px;
+}
+
+/* Fin Estilos YFU */
+
+/* Estilos para seccion SOBRE NOSOTROS */
+/* Estilos para banner header */
+
+.bannerSobreNosotros{
+  background-image: url(../assets/bannerSobreNos.jpg);
+  width: 100%;
+  height: 15vh;
+  background-position: 10% 28%;
+}
+
+/* Estilos para el MAIN Sobre nosotros  */
+
+.nosotros-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "coolsville";
+}
+
+.coolsville-grid{
+  grid-area: coolsville;
+}
+
+/* Estilos para section sobreCoolsville */
+
+.sobreCoolsville{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "coolsville__titulo coolsville__titulo"
+                        "coolsville__img coolsville__p";
+  column-gap: 5em;
+}
+
+.sobreCoolsville h1{
+  grid-area: coolsville__titulo;
+  font-family: 'Vidaloka', serif;
+  font-size: 78px;
+  font-weight: 100;
+  margin: auto;
+  text-align: center;
+}
+
+.sobreCoolsville__img {
+  grid-area: coolsville__img;
+  justify-self: end;
+}
+
+.sobreCoolsville__img img{
+  width: 20em;
+  height: 15em;
+}
+
+.sobreCoolsville__p{
+  grid-area: coolsville__p;
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 18px;
+  text-align: justify;
+  justify-self: start;
+  border-bottom: solid 1px #000;
+}
+
+/* Fin estilos Sobre Nosotros */
+
+/* Estilos seccion CONTACTO */
+
+.bannerContacto{
+  background-image: url(../assets/bannerContacto.webp);
+  width: 100%;
+  height: 15vh;
+}
+
+.contactoFormulario{
+  position: relative;
+  top: 80;
+  font-family: 'lato' sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.contactoFormulario h1{
+  display: inline-block;
+  padding: 15px;
+  border: solid 1px #000;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20%;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (max-width: 1024px){
+ 
+  
+  /* Estilos Header */
+  header{
+    height: 20vh;
+  }
+  
+  .header-fondo{
+    height: 20vh;
+  }
+  
+  /* ESTILOS PARA SECCION INDEX */
+  /* Estilos index, section Video */
+
+  .videoInformativo__video{
+    max-width: 30em;
+  } 
+
+  /* FIN SECCION INDEX */
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 500px){
+
+              /* ESTILOS SECCION INDEX */
+
+  /* Estilos Index, section1 */
+
+.inscripciones__contenedor__titulo{
+  font-size: 25px;
+} 
+ 
+.inscripciones__contenedor__parrafo{
+  font-size: 2em;
+}
+
+
+  /* Estilos index, section Video */
+
+  .videoInformativo__video{
+    max-width: 25em;
+  } 
+
+
+  /* Estilos FOOTER */
+
+  .footer__ul{
+    padding-top: 1em;
+    margin-left: 2em;
+  }
+
+  .footer__titulo{
+    font-size: 1em;
+    margin-right: 1em;
+  }
+
+  /* FIN SECCION INDEX */
+
+                      /* ESTILOS SECCION CURSOS */
+
+  /* Estilos para section KIDS */
+
+  .kids{
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 1fr 1fr;
+    grid-template-areas: "kids__titulo"
+                          "kids__img"
+                          "kids__p";
+  }
+
+  .kids__img img{
+    width: 19em;
+    height: 10em;
+  }
+  /* FIN SECCION CURSOS */
+
+            /* ESTILOS SECCION NOTICIAS */
+
+  /* Estilos section Yfu */
+
+  .yfu{
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 1fr 1fr;
+    grid-template-areas: "yfu__titulo"
+                          "yfu__img"
+                          "yfu__informacion";
+  }
+
+  .yfu__img img{
+    width: 19em;
+    height: 10em;
+  }
+
+/* FIN SECCION NOTICIAS */
+
+        /* ESTILOS SECCION "SOBRE NOSOTROS" */
+
+/* Estilos para section sobreCoolsville */
+
+  .sobreCoolsville{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "coolsville__titulo"
+                          "coolsville__img"
+                          "coolsville__p";
+    row-gap: 1em;
+  }
+
+  .sobreCoolsville__img {
+    margin: auto;
+  }
+
+  .sobreCoolsville__p{
+    padding-bottom: 1em;
+    margin: auto;
+  }
+
+/* FIN SECCION "SOBRE NOSOTROS" */
+
+
+}
